@@ -1,4 +1,4 @@
-<single-spa-router>
+<single-spa-router mode="hash">
   <!--
 
     This is the single-spa Layout Definition for your microfrontends.
@@ -17,7 +17,22 @@
 
   -->
 
+  <style>
+    nav {
+      height:50px; width:100%; background-color: darkblue;
+    }
+    nav a {
+      color: white !important; font-size: 16px; margin: 10px; display: inline-block;
+    }
+  </style>
+
   <main>
+    <nav>
+      <a href="#/app1/test">App1 - test1 comp</a>
+      <a href="#/app1/test2">App1- test2 comp</a>
+      <a href="#/app2/test1">App2 - test1 comp</a>
+      <a href="#/app2/test2">App2 - test2 comp</a>
+    </nav>
     <route path="app1">
       <application name="@mfa-org/mfa-app1"></application>
     </route>
@@ -25,7 +40,7 @@
       <application name="@mfa-org/mfa-app2"></application>
     </route>
     <route default>
-      <application name="@single-spa/welcome"></application>
+      Not found!!!!!!
     </route>
   </main>
 </single-spa-router>
