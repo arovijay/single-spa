@@ -22,3 +22,7 @@ Now go to app.module.ts and add EmptyRouteComponent to the declarations array in
 "@mfa-org/mfa-app1": "http://localhost:4200/main.js"
 6) do npm start for rootconfig - open http://localhost:9000/
 do npm run serve:single-spa:mfa-app1 - open and verify with http://localhost:9000/app1
+
+
+If second app is angular, repeat the same steps to create another mfa app
+change the port alone in serve command
